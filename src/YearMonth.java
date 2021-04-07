@@ -1,6 +1,15 @@
+/*
+ *  @author
+ *  -   Akmal 'Aisy Bin Rudy                (52215220045)
+ *  -   Mohd Faiz Bin Radzi                 (52215220049)
+ *  -   Danish Imran Bin Mohd Arif Archi    (52215220060)
+ *  -   Nur Arifa Binti Nor Azlan           (52215220050)
+ *
+ */
 public class YearMonth {
     private int monthNumber;
 
+    //  Default YearMonth constructor
     YearMonth(){
 
     }
@@ -9,6 +18,15 @@ public class YearMonth {
         this.monthNumber    = month;
     }
 
+    /*
+     *  @params String monthName
+     *
+     *  @description
+     *  The constructor takes in a month name as a String argument,
+     *  Then it uses the String to assign the monthNumber field with the corresponding month in numerical form.
+     *
+     *  @return none
+     */
     YearMonth(String monthName){
         switch (monthName){
             case "January":
@@ -51,6 +69,18 @@ public class YearMonth {
         }
     }
 
+    /*
+     *  @params int monthNumber
+     *
+     *  @description
+     *  The accessor takes in an int argument representing the month in numerical form,
+     *  Then it compares whether the argument is greater than 12.
+     *
+     *  if the month is greater than 12, the monthNumber field is set to 1.
+     *  else it sets the monthNumber field to the given argument.
+     *
+     *  @return void
+     */
     public void setMonthNumber(int monthNumber) {
         if (monthNumber > 12) {
             this.monthNumber = 1;
@@ -60,10 +90,27 @@ public class YearMonth {
         }
     }
 
+    /*
+     *  @params none
+     *
+     *  @description
+     *  The accessor returns the monthNumber field.
+     *
+     *  @return int monthNumber
+     */
     public int getMonthNumber() {
         return this.monthNumber;
     }
 
+    /*
+     *  @params none
+     *
+     *  @description
+     *  The method checks the monthNumber field with the equivalent month numerical
+     *  and returns a string equivalent
+     *
+     *  @return String
+     */
     public String getMonthName(){
         if (this.monthNumber == 1) {
             return "January";
@@ -95,6 +142,15 @@ public class YearMonth {
 
     }
 
+    /*
+     *  @params none
+     *
+     *  @description
+     *  The method checks the monthNumber field with the equivalent month numerical
+     *  and converts the monthNumber with a string equivalent
+     *
+     *  @return String
+     */
     public String toString(){
         if (this.monthNumber == 1) {
             return "January";
@@ -126,6 +182,15 @@ public class YearMonth {
 
     }
 
+    /*
+     *  @params YearMonth month
+     *
+     *  @description
+     *  The method takes in a YearMonth object,
+     *  Then it compares whether its monthNumber is equal to the current object monthNumber field.
+     *
+     *  @return boolean
+     */
     public boolean equal(YearMonth month){
         if (month.getMonthNumber() == this.monthNumber) {
             return true;
@@ -135,6 +200,15 @@ public class YearMonth {
         }
     }
 
+    /*
+     *  @params YearMonth month
+     *
+     *  @description
+     *  The method takes in a YearMonth object,
+     *  Then it compares whether its monthNumber is greater than the current object monthNumber field.
+     *
+     *  @return boolean
+     */
     public boolean greaterThan(YearMonth month){
         if (this.monthNumber > month.getMonthNumber()) {
             return true;
@@ -144,6 +218,15 @@ public class YearMonth {
         }
     }
 
+    /*
+     *  @params YearMonth month
+     *
+     *  @description
+     *  The method takes in a YearMonth object,
+     *  Then it compares whether its monthNumber is lesser than the current object monthNumber field.
+     *
+     *  @return boolean
+     */
     public boolean lessThan(YearMonth month){
         if (this.monthNumber < month.getMonthNumber()) {
             return true;
