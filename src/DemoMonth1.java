@@ -13,7 +13,7 @@ public class DemoMonth1 {
         YearMonth month = new YearMonth();
 
         //  Loop over all 12 months, starting from 1
-        for(int i = 1; i < 12; i++ ){
+        for(int i = 1; i <= 12; i++ ){
 
             //  Set the month number using the iterator
             month.setMonthNumber(i);
