@@ -11,7 +11,7 @@ public class YearMonth {
 
     //  Default YearMonth constructor
     YearMonth(){
-
+        this.monthNumber    = 1;
     }
 
     YearMonth(int month){
