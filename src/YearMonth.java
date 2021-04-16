@@ -82,7 +82,7 @@ public class YearMonth {
      *
      *  @description
      *  The accessor takes in an int argument representing the month in numerical form,
-     *  Then it compares whether the argument is greater than 12.
+     *  Then it compares whether the argument is greater than 12 and lesser then 1.
      *
      *  if the month is greater than 12, the monthNumber field is set to 1.
      *  else it sets the monthNumber field to the given argument.
@@ -90,7 +90,7 @@ public class YearMonth {
      *  @return void
      */
     public void setMonthNumber(int monthNumber) {
-        if (monthNumber > 12) {
+        if (monthNumber < 1) || (monthNumber > 12) {
             this.monthNumber = 1;
         }
         else{
