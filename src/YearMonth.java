@@ -37,35 +37,37 @@ public class YearMonth {
             break;
             case "March":
                 this.monthNumber = 3;
-                break;
+            break;
             case "April":
                 this.monthNumber = 4;
                 break;
             case "May":
                 this.monthNumber = 5;
-                break;
+            break;
             case "June":
                 this.monthNumber = 6;
-                break;
+            break;
             case "July":
                 this.monthNumber = 7;
-                break;
+            break;
             case "August":
                 this.monthNumber = 8;
-                break;
+            break;
             case "September":
                 this.monthNumber = 9;
-                break;
+            break;
             case "October":
                 this.monthNumber = 10;
-                break;
+            break;
             case "November":
                 this.monthNumber = 11;
-                break;
+            break;
             case "December":
                 this.monthNumber = 12;
-                break;
-
+            break;
+            default:
+                System.out.println("There is no such month");
+            break;
         }
     }
 
