@@ -15,7 +15,7 @@ public class YearMonth {
     }
 
     YearMonth(int month){
-        if (month < 1) || (month > 12)
+        if ((month < 1) || (month > 12))
         {
             this.monthNumber    = 1;
         }
@@ -90,7 +90,8 @@ public class YearMonth {
      *  @return void
      */
     public void setMonthNumber(int monthNumber) {
-        if (monthNumber < 1) || (monthNumber > 12) {
+        if ((monthNumber < 1) || (monthNumber > 12))
+        {
             this.monthNumber = 1;
         }
         else{
