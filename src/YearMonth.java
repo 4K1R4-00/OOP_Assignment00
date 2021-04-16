@@ -15,7 +15,13 @@ public class YearMonth {
     }
 
     YearMonth(int month){
-        this.monthNumber    = month;
+        if (month < 1) || (month > 12)
+        {
+            this.monthNumber    = 1;
+        }
+        else {
+            this.monthNumber    = month;
+        }
     }
 
     /*
